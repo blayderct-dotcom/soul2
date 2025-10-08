@@ -15,7 +15,7 @@ const client = new Client({
 
 // Express server, .env port ile çalışacak
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5500;
 app.get('/', (req, res) => res.send('Bot çalışıyor!'));
 app.listen(PORT, () => console.log(`Server ${PORT} portunda çalışıyor.`));
 
@@ -70,3 +70,4 @@ client.on('messageCreate', async (message) => {
 });
 
 client.login(process.env.TOKEN);
+
